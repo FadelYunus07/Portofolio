@@ -8,17 +8,21 @@ section {
 
 .eyes {
   position: relative;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .eyes .eye {
+  position: relative;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: rgb(63, 23, 23);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 80px;
+  display: block;
 }
-
-.eyes .eye::before {
+.navbar .eyes .eye::before {
   content: "";
   position: absolute;
   top: 50%;
