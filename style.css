@@ -18,7 +18,7 @@ section {
   margin-left: 80px;
 }
 
-.eye::before {
+.eyes .eye::before {
   content: "";
   position: absolute;
   top: 50%;
