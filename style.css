@@ -8,10 +8,13 @@
 section {
   padding-top: 6rem;
 }
-
-.eye {
-  margin: auto;
+.navbar .eye {
+  margin-left: 45%;
 }
-.pupil {
+.navbar .pupil {
   position: relative;
+  fill: #ff1e00;
+}
+.navbar .eyeball {
+  fill: rgb(18, 37, 65);
 }

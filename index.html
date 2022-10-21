@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <!-- Icon Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-    <script src="animation.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="home">
@@ -18,7 +17,13 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarText">
+          <!-- Animasi Mata -->
+          <svg width="30" height="30" class="eye">
+            <circle cx="15" cy="15" r="15" class="eyeball" />
+            <circle cx="15" cy="15" r="10" class="pupil" />
+          </svg>
           <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
@@ -43,12 +48,7 @@
       <img src="image/fadelcrop.jpg" alt="foto_profile" width="200px" class="rounded-circle img-thumbnail" />
       <h1 class="display-6">Fadel Yunus Mahrus</h1>
       <p class="lead">Student | Junior Android Developer</p>
-      <!-- Animasi Mata -->
-      <svg width="100" height="100" class="eye">
-        <circle cx="50" cy="50" r="50" fill="white" class="eyeball" />
-        <circle cx="50" cy="50" r="30" fill="#0D0D20" class="pupil" />
-      </svg>
-      <!-- Script EYES -->
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -171,7 +171,8 @@
       <p>Created with by <i class="bi bi-keyboard-fill"></i> <a class="fw-bold text-decoration-none text-white" href="3">Fadel Yunus Mahrus</a></p>
     </footer>
     <!-- Akhir Footer -->
-
+    <!-- Script EYES -->
+    <script src="animation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
