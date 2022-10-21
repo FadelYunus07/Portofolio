@@ -18,6 +18,34 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Animasi Mata -->
+        <div class="eyes">
+          <div class="eye"></div>
+        </div>
+        <!-- Script EYES -->
+        <script>
+          document.querySelector('body')
+          .addEventListener('mousemove', eyeball);
+          function eyeball(){
+              var eye= document.querySelectorAll
+              ('.eye');
+               eye. forEach(function(eye){
+                   let x = (eye.getBoundingClientRect()
+                   .left) + (eye.clientWidth / 2);
+                   let y = (eye. getBoundingClientRect()
+                   .top) + (eye.clientHeight / 2);
+                   let radian = Math.atan2(event.pageX -
+                   x, event.pagey - y);
+                   let rot = (radian * (180 / Math.PI) *
+                   -1) + 270;
+                  eye.style.transform = "rotate("+ rot
+                   +"deg)";
+          })
+        }
+        </script>
+      
+        <!-- Akhir Script EYES -->
+        <!-- Akhir Animasi Mata -->
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
             <li class="nav-item">
@@ -63,7 +91,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde ipsum perferendis alias tempora eius amet quae quis inventore exercitationem dignissimos?</p>
+            <p>Nama saya Fadel Yunus Mahrus, seorang mahasiswa dari Universitas Pamulang yang berasal dari Banyuwangi, jawa timur. Saya</p>
           </div>
           <div class="col-md-4">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dicta perferendis laborum voluptates cum officia unde quidem pariatur, mollitia culpa consectetur veniam modi error delectus.</p>
@@ -166,6 +194,6 @@
     </footer>
     <!-- Akhir Footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></>
   </body>
 </html>
