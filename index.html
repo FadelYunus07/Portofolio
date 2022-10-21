@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <!-- Icon Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-
+    <script src="animation.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="home">
@@ -18,7 +18,6 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
             <li class="nav-item">
@@ -45,25 +44,11 @@
       <h1 class="display-6">Fadel Yunus Mahrus</h1>
       <p class="lead">Student | Junior Android Developer</p>
       <!-- Animasi Mata -->
-      <div class="eyes">
-        <div class="eye"></div>
-      </div>
+      <svg width="100" height="100" class="eye">
+        <circle cx="50" cy="50" r="50" fill="white" class="eyeball" />
+        <circle cx="50" cy="50" r="30" fill="#0D0D20" class="pupil" />
+      </svg>
       <!-- Script EYES -->
-      <script>
-        document.querySelector("body").addEventListener("mousemove", eyeball);
-        function eyeball() {
-          var eye = document.querySelectorAll(".eye");
-          eye.forEach(function (eye) {
-            let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
-            let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
-            let radian = Math.atan2(event.pageX - x, event.pageY - y);
-            let rot = radian * (180 / Math.PI) * -1 + 270;
-            eye.style.transform = "rotate(" + rot + "deg)";
-          });
-        }
-      </script>
-      <!-- Akhir Script EYES -->
-      <!-- Akhir Animasi Mata -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"

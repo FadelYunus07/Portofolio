@@ -1,3 +1,6 @@
+.body {
+  display: flex;
+}
 .jumbotron {
   padding-top: 8rem;
   background: #8a9de2;
@@ -6,30 +9,9 @@ section {
   padding-top: 6rem;
 }
 
-.eyes {
-  position: relative;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.eye {
+  margin: auto;
 }
-
-.navbar .eyes .eye {
+.pupil {
   position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: rgb(63, 23, 23);
-  display: block;
-}
-.navbar .eyes .eye::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  width: 15px;
-  height: 15px;
-  background: rgb(252, 64, 7);
-  border-radius: 50%;
 }
