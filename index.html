@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body id="home">
+  <body id="home" class="text-bg-dark">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg shadow fixed-top bg-dark.bg-gradient">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top text-dark" style="backdrop-filter: blur(5px); background-color: #0a0a0a52">
       <div class="container">
         <a class="navbar-brand" href="#">DGland</a>
 
@@ -22,7 +22,7 @@
           <!-- Animasi Mata -->
           <svg width="30" height="30" class="eye">
             <circle cx="15" cy="15" r="15" class="eyeball" />
-            <circle cx="15" cy="15" r="10" class="pupil" />
+            <circle cx="15" cy="15" r="8" class="pupil" />
           </svg>
           <!-- Akhir Animasi Mata -->
           <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
@@ -44,8 +44,8 @@
     </nav>
     <!-- Akhir Navbar -->
     <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="image/fadelcrop.jpg" alt="foto_profile" width="200px" class="rounded-circle img-thumbnail" />
+    <section class="jumbotron text-center h-auto">
+      <img src="image/fadelcrop.jpg" alt="foto_profile" width="200px" class="rounded-circle img-thumbnail shadow-lg mb-3" />
       <h1 class="display-6">Fadel Yunus Mahrus</h1>
       <p class="lead">Student | Junior Android Developer</p>
     </section>
@@ -53,35 +53,43 @@
     <!-- Profile -->
     <section id="about">
       <div class="container">
-        <div class="row text-center mb-4">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mb-5">
           <div class="col-md-4">
-            <p>Nama saya Fadel Yunus Mahrus, seorang mahasiswa dari Universitas Pamulang yang berasal dari Banyuwangi, jawa timur. Saya</p>
+            <img src="image/fadelunpam-removebg-preview2.png" alt="profile" class="w-75 h-auto mx-auto" />
           </div>
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dicta perferendis laborum voluptates cum officia unde quidem pariatur, mollitia culpa consectetur veniam modi error delectus.</p>
+          <div class="col-md-4 align-content-sm-stretch my-auto">
+            <h2 class="text-center">WHO AM I...?? 🤔</h2>
+            <p class="my-auto text-center">Nama saya Fadel Yunus Mahrus, seorang mahasiswa dari Universitas Pamulang yang berasal dari Banyuwangi, jawa timur. Saya</p>
           </div>
         </div>
       </div>
     </section>
     <!-- Akhir Profile -->
     <!-- Projects -->
-    <section id="projects" style="background-color: #8a9de2">
-      <div class="container">
+    <section id="projects">
+      <div class="container text-bg-dark">
         <div class="row text-center mb-4">
           <div class="col">
             <h2>My Projects</h2>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-4 m-1"><img src="image/fadelcrop.jpg" alt="#" /></div>
-          <div class="col-md-4 m-1"><img src="image/fadelcrop.jpg" alt="#" /></div>
-          <div class="col-md-4 m-1"><img src="image/fadelcrop.jpg" alt="#" /></div>
-          <div class="col-md-4 m-1"><img src="image/fadelcrop.jpg" alt="#" /></div>
+          <div class="col-md-2 m-1">
+            <img class="w-100 h-auto mb-2" src="image/fadelcrop.jpg" alt="#" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+          <div class="col-md-2 m-1">
+            <img class="w-100 h-auto mb-2" src="image/fadelcrop.jpg" alt="#" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+          <div class="col-md-2 m-1">
+            <img class="w-100 h-auto mb-2" src="image/fadelcrop.jpg" alt="#" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+          <div class="col-md-2 m-1">
+            <img class="w-100 h-auto mb-2" src="image/fadelcrop.jpg" alt="#" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -95,7 +103,7 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-6 shadow-lg p-4 m-5 rounded-5">
+          <div class="col-md-6 shadow-lg p-4 rounded-5">
             <form>
               <div class="mb-3">
                 <label for="name" class="form-label">Nama</label>
@@ -117,7 +125,7 @@
     </section>
     <!-- Akhir Contact -->
     <!-- Footer -->
-    <footer class="footer text-center text-white pb-1" style="width: 100%; background-color: #2330c4">
+    <footer class="footer text-center text-white pb-1 w-100 bg-black">
       <br />
       <p>Created with by <i class="bi bi-keyboard-fill"></i><a class="fw-bold text-decoration-none text-white" href="3"> Fadel Yunus Mahrus</a></p>
     </footer>

@@ -1,24 +1,24 @@
 .body {
   display: flex;
+  color: aliceblue;
 }
 .jumbotron {
-  padding-top: 8rem;
-  background: #8a9de2;
+  background-color: rgb(43, 53, 63);
 }
 section {
-  padding-top: 6rem;
+  padding: 15% 0;
 }
 .navbar .eye {
   margin-left: 45%;
 }
 .navbar .pupil {
   position: relative;
-  fill: #ff1e00;
+  fill: #010047;
 }
 .navbar .eyeball {
-  fill: rgb(18, 37, 65);
+  fill: rgb(134, 134, 134);
 }
-.navbar .pupil:hover {
-  width: 7px;
-  height: 7px;
+
+#project img {
+  width: 30%;
 }
