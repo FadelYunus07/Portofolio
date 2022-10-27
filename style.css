@@ -1,3 +1,6 @@
+* {
+  /* border: #f01313 solid 1px; */
+}
 .body {
   display: flex;
   color: aliceblue;
@@ -20,12 +23,10 @@ section {
 #projects {
   background-color: #2b193d;
 }
-.jumbotron {
-  background-color: #353535;
-}
 #about {
-  background-color: #3c6e71;
+  background-color: #ada9a9;
+  color: #010047;
 }
-#projects img {
-  width: 30%;
+.jumbotron {
+  background-color: #628e90;
 }
