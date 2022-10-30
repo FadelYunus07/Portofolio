@@ -14,19 +14,47 @@ section {
 }
 .navbar .pupil {
   position: relative;
-  fill: #010047;
+  fill: #2f5f70;
 }
 .navbar .eyeball {
-  fill: rgb(134, 134, 134);
+  fill: #e0e3e4;
 }
 
 #projects {
-  background-color: #2b193d;
+  background-color: #2f5f70;
 }
 #about {
-  background-color: #ada9a9;
-  color: #010047;
+  background-color: #5e8c9e;
+}
+#about p:active {
+  text-align: justify;
 }
 .jumbotron {
-  background-color: #628e90;
+  background-color: #2f5f70;
+}
+#about svg {
+  position: absolute;
+  z-index: -1;
+}
+#contact {
+  background-color: #5e8c9e;
+}
+.footer {
+  background-color: #2f5f70;
+}
+
+@media only screen and (max-width: 667px) {
+  #about svg {
+    top: 0%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #about svg {
+    top: -30%;
+  }
+}
+@media only screen and (min-width: 922px) {
+  #about svg {
+    top: -80%;
+  }
 }
